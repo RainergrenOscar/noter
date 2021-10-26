@@ -1,0 +1,33 @@
+/* 
+    GOOGLE FONTS
+
+    - PACIFICO
+    - RED HAT 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,300;1,400;1,500&display=swap');
+
+/* 
+    COLOR VARIABLES
+*/
+:root {
+    --dark-grey: #5E5A56;
+    --light-grey: #C1B3A4;
+    --lighter-grey: #FEF7EC;
+
+    --vine-red: #A43A26;
+}
+
+/* 
+    DROP SHADOWS
+*/
+:root {
+    --head-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+    --btn-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+
+
+
