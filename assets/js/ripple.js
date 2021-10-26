@@ -19,7 +19,7 @@ function createRipple(event) {
     button.appendChild(circle);
   }
    
-  const buttons = document.getElementsByTagName("button");
-  for (const button of buttons) {
-    button.addEventListener("click", createRipple);
-  }
+const buttons = document.getElementsByTagName("button");
+for (const button of buttons) {
+  button.addEventListener("click", createRipple);
+}

@@ -41,22 +41,22 @@ main {
     align-items: center;
 }
 
-main .icon-container {
+main #icon-container {
     display: flex;
     justify-content: center;
 
     padding: 5vh 0 5vh 0;
 }
 
-.icon-container img {
+#icon-container img {
     width: 125px;
 }
 
-main .text-container {
+main #text-container {
     width: 25vw;
 }
 
-main .text-container h2 {
+main #text-container h2 {
     margin: 0 0 12.5px 0;
     font-size: 28px;
     font-style: italic;
@@ -64,18 +64,18 @@ main .text-container h2 {
     color: var(--dark-grey);
 }
 
-main .text-container p {
+main #text-container p {
     font-size: 18px;
     font-weight: 300;
 
     color: var(--light-grey);
 }
 
-main .text-container p:nth-child(4) {
+main #text-container p:nth-child(4) {
     padding: 0 0 15px 0;
 }
 
-main .text-container .noun{
+main #text-container .noun{
     padding: 15px 0 45px 0;
     border-top: 1px solid var(--light-grey);
 }
@@ -96,6 +96,49 @@ main button {
     background: var(--vine-red);
     box-shadow: var(--btn-shadow);
 }
+
+#sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sign-up #container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 5vh 0 5vh 0;
+}
+
+#sign-up h2 {
+    font-weight: 300;
+    color: var(--light-grey);
+
+    margin: 0 0 5vh 0;
+}
+
+#sign-up input{
+    border: 0;
+    height: 50px;
+    width: 260px;
+
+    margin: 0 0 5vh 0;
+    background: none;
+    color: var(--dark-grey);
+    border-bottom: 2px solid var(--light-grey);
+}
+
+#sign-up input::placeholder {
+    color: var(--light-grey);
+}
+
+
+/* 
+    RIPPLE EFFECT
+*/
 
 span.ripple {
     position: absolute;
