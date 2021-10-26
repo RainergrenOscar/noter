@@ -1,6 +1,7 @@
 let button = document.getElementById('get-started');
 let main = document.getElementsByTagName('main')[0];
 let getStartedHTML = document.getElementById('get-started');
+const error = `<p class="error">Please fill in credentials</p>`;
 
 button.addEventListener('click', getStarted);
 
@@ -23,26 +24,24 @@ function getStarted() {
 }
 
 function signIn() {
-    errorContainer = document.getElementById('error-container')
-    errorContainer.innerHTML = '';
     
     signUpHTML = document.getElementById('sign-up');
 
     let username = document.getElementById('username');
     let pin = document.getElementById('pin');
-
+    
     username.classList.remove('error-input');
     pin.classList.remove('error-input');
 
-    let error = `<p class="error">Please fill in credentials</p>`;
+    let errorContainer = document.getElementById('error-container');
 
     if(!username.value && !pin.value) {
+        errorContainer.innerHTML += error;
         username.classList.add('error-input');
         pin.classList.add('error-input');
-        errorContainer.innerHTML += error;
     } else {
         signUpHTML.remove();
-        main.innerHTML += noteHTML;
-        document.title = "Noter - My Notes";
+        //main.innerHTML += noteHTML;
+        document.title = `${username.value}'s Notes`;
     }
 }
