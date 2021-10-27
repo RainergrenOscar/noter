@@ -1,11 +1,7 @@
-let button = document.getElementById('get-started');
 let main = document.getElementsByTagName('main')[0];
 let getStartedHTML = document.getElementById('get-started');
 
-
-button.addEventListener('click', getStarted);
-
-function getStarted() {
+function getStartedView() {
     // Clearing the content of getStarted.
     getStartedHTML.remove();
     // Add sign up html to main.

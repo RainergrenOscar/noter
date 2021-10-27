@@ -65,6 +65,12 @@ main #icon-container {
     padding: 5vh 0 5vh 0;
 }
 
+#get-started {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 #icon-container img {
     width: 125px;
 }
