@@ -9,7 +9,9 @@ function getStartedView() {
     <div id="sign-up">
         <div id="container">
             <h2>Let us create your account</h2>
+            <label>Username</label>
             <input id="username" type="text" placeholder="Username" autocomplete="off">
+            <label>PIN</label>
             <input id="pin" type="password" placeholder="PIN">
         </div>
         <button id="sign-up" onclick="signIn()">Sign Up</button>
